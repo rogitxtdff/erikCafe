@@ -1,4 +1,4 @@
-let photoSliderLanding = ["./img/landing2.jpg", "./img/landing1.jpg"];
+let photoSliderLanding = ["./img/landing2.jpg","./img/landing1.jpg" ,"./img/landing3.jpg"];
 
 let categoryProduct = [
   {
@@ -58,7 +58,7 @@ const coffeeProducts = [
     category: "قهوه آسیاب",
     price: 250000,
     discount: 10,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ const coffeeProducts = [
     category: "قهوه آسیاب",
     price: 180000,
     discount: 5,
-    img: "./img/cafe.png",
+    img: "2.webp",
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const coffeeProducts = [
     category: "قهوه آسیاب",
     price: 220000,
     discount: 15,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 4,
@@ -82,7 +82,7 @@ const coffeeProducts = [
     category: "ابزار باریستا",
     price: 130000,
     discount: 0,
-    img: "./img/cafe.png",
+    img: "4.webp",
   },
   {
     id: 5,
@@ -90,7 +90,7 @@ const coffeeProducts = [
     category: "ابزار باریستا",
     price: 95000,
     discount: 10,
-    img: "./img/cafe.png",
+    img: "5.webp",
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ const coffeeProducts = [
     category: "ابزار باریستا",
     price: 320000,
     discount: 12,
-    img: "./img/cafe.png",
+    img: "6.webp",
   },
   {
     id: 7,
@@ -106,7 +106,7 @@ const coffeeProducts = [
     category: "بویلر آب جوش",
     price: 2400000,
     discount: 8,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 8,
@@ -114,7 +114,7 @@ const coffeeProducts = [
     category: "بویلر آب جوش",
     price: 1800000,
     discount: 5,
-    img: "./img/cafe.png",
+    img: "2.webp",
   },
   {
     id: 9,
@@ -122,7 +122,7 @@ const coffeeProducts = [
     category: "بویلر آب جوش",
     price: 3500000,
     discount: 10,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 10,
@@ -130,7 +130,7 @@ const coffeeProducts = [
     category: "تجهیزات کافه و رستوران",
     price: 2700000,
     discount: 12,
-    img: "./img/cafe.png",
+    img: "4.webp",
   },
   {
     id: 11,
@@ -138,7 +138,7 @@ const coffeeProducts = [
     category: "تجهیزات کافه و رستوران",
     price: 1900000,
     discount: 8,
-    img: "./img/cafe.png",
+    img: "5.webp",
   },
   {
     id: 12,
@@ -146,7 +146,7 @@ const coffeeProducts = [
     category: "تجهیزات کافه و رستوران",
     price: 5800000,
     discount: 15,
-    img: "./img/cafe.png",
+    img: "6.webp",
   },
   {
     id: 13,
@@ -154,7 +154,7 @@ const coffeeProducts = [
     category: "شو کیک",
     price: 4500000,
     discount: 10,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 14,
@@ -162,7 +162,7 @@ const coffeeProducts = [
     category: "شو کیک",
     price: 320000,
     discount: 5,
-    img: "./img/cafe.png",
+    img: "2.webp",
   },
   {
     id: 15,
@@ -170,7 +170,7 @@ const coffeeProducts = [
     category: "شو کیک",
     price: 150000,
     discount: 8,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 16,
@@ -178,7 +178,7 @@ const coffeeProducts = [
     category: "قهوه آسیاب",
     price: 200000,
     discount: 10,
-    img: "./img/cafe.png",
+    img: "4.webp",
   },
   {
     id: 17,
@@ -186,7 +186,7 @@ const coffeeProducts = [
     category: "ابزار باریستا",
     price: 450000,
     discount: 12,
-    img: "./img/cafe.png",
+    img: "5.webp",
   },
   {
     id: 18,
@@ -194,7 +194,7 @@ const coffeeProducts = [
     category: "ابزار باریستا",
     price: 95000,
     discount: 5,
-    img: "./img/cafe.png",
+    img: "6.webp",
   },
   {
     id: 19,
@@ -202,7 +202,7 @@ const coffeeProducts = [
     category: "قهوه آسیاب",
     price: 270000,
     discount: 15,
-    img: "./img/cafe.png",
+    img: "1.webp",
   },
   {
     id: 20,
@@ -210,7 +210,7 @@ const coffeeProducts = [
     category: "ابزار باریستا",
     price: 280000,
     discount: 10,
-    img: "./img/cafe.png",
+    img: "2.webp",
   },
 ];
 
@@ -257,21 +257,23 @@ let d = 0;
 // تغییر اسلایدر هر ۴ ثانیه بین دو تصویر
 
 setInterval(function () {
-  if (i === 0) {
-    i = 1;
-  } else {
-    i = 0;
+  
+  if (i>= 3) {
+    i=0
   }
   sliderPc[0].style.backgroundImage = `url(${photoSliderLanding[i]})`;
-}, 4000);
-setInterval(function () {
-  if (d === 0) {
-    d = 1;
-  } else {
-    d = 0;
-  }
-  sliderPc[1].style.backgroundImage = `url(${photoSliderLanding[d]})`;
+  i++
 }, 3000);
+setInterval(function () {
+  console.log(d);
+  
+  if (d>= 3) {
+    d=0
+  }
+  
+  sliderPc[1].style.backgroundImage = `url(${photoSliderLanding[d]})`;
+  d++
+}, 5000);
 
 // مدیریت تغییر کلاس دسته‌بندی‌های انتخاب شده
 liCat.forEach(function (params) {
@@ -370,12 +372,12 @@ function addPruduct(array, IsAll) {
         "beforeend",
         `
                 <a href="#">
-                    <div class="bg-white w-[321px] h-[410px] rounded-[20px] m-auto relative flex flex-col items-center border border-gray-200 " style="cursor: auto;">
+                    <div  class="bg-white w-[321px] h-[410px] rounded-[20px] m-auto relative flex flex-col items-center border border-gray-200 " style="cursor: auto;" >
                         <div class="absolute z-10 left-3 top-3 w-[60px] h-[29px] rounded-[31px] bg-black flex justify-center text-white items-center text-[15px] font-sans">
                             ${product.discount}%
                         </div>
                         <div class="w-[85%] h-[70%] flex justify-center items-center group">
-                            <img class="w-[40%] group-hover:w-[42%] duration-300" src="${
+                            <img class="w-[70%] group-hover:w-[74%] duration-300" src="./img/product/${
                               product.img
                             }" alt="" style="cursor: pointer;">
                         </div>

@@ -6,13 +6,14 @@
     <title>Espersp Shop</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <!-- class="sm:bg-pink-200 md:bg-blue-200 lg:bg-green-200 xl:bg-yellow-200 2xl:bg-[#FFF8F5] " -->
-<body style="font-family:vaziri;overflow-x: auto; width: 100%;" >
+<body style="font-family:vaziri;overflow-x: auto; width: 100%; " class="overflow-x-hidden" >
     <!-- /////////////////////////////////////////////////////////////////////////////////////////Header -->
     <div id="header" class="w-full h-[80px] md:h-[100px] lg:h-[120px] flex items-center justify-between px-2 md:px-4 lg:px-8">
 
-    <div id="right-side-header"  class=" md:w-1/6 ml-[10%] sm:ml-[8%] md:ml-0 w-1/8 xl:w-1/8 flex justify-around items-center h-[50%] md:h-[60%] mr-2 md:mr-4 lg:mr-8">
+    <div id="right-side-header" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="200"  class=" md:w-1/6 ml-[10%] sm:ml-[8%] md:ml-0 w-1/8 xl:w-1/8 flex justify-around items-center h-[50%] md:h-[60%] mr-2 md:mr-4 lg:mr-8">
         <div dir="ltr" class=" justify-center items-center hidden md:flex font-bold text-xs md:text-sm lg:text-base">
             <p class="text-[#9E624C]">021-</p>
             64297655
@@ -25,7 +26,7 @@
         </div>
     </div>
 
-    <div id="center-logo-header" class="w-1/5 md:w-1/6 h-full flex justify-center items-center">
+    <div id="center-logo-header" data-aos-easing="linear" data-aos="zoom-out" data-aos-duration="200" class="w-1/5 md:w-1/6 h-full flex justify-center items-center">
         <svg class="w-[70%] md:w-[60%] lg:w-[50%] xl:w-[45%]"    viewBox="0 0 147 51" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="147" height="51" fill="url(#pattern0_1_1282)"/>
 <defs>
@@ -38,7 +39,7 @@
 
     </div>
 
-    <div id="left-side-header" class="ml-2 md:ml-4 lg:ml-9 w-2/8 sm:w-1/5 md:w-1/6 lg:w-2/9 xl:w-1/9 h-[50%] md:h-[60%] flex justify-between items-center" dir="ltr">
+    <div id="left-side-header" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="200" class="ml-2 md:ml-4 lg:ml-9 w-2/8 sm:w-1/5 md:w-1/6 lg:w-2/9 xl:w-1/9 h-[50%] md:h-[60%] flex justify-between items-center" dir="ltr">
         <div id="basket" style="cursor: pointer;" class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] rounded-full flex justify-center items-center bg-[#9E624C] ">
             
 <svg id="Layer_1" data-name="Layer 1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="40%" viewBox="0 0 106.53 122.88"><title>shopping-bag</title><path d="M4.93,30.34H27.41V25.76a25.77,25.77,0,0,1,51.53,0v4.58H101.6a4.91,4.91,0,0,1,3.47,1.45h0a4.9,4.9,0,0,1,1.44,3.48v69.9a17.75,17.75,0,0,1-17.7,17.7H17.7A17.75,17.75,0,0,1,0,105.18V35.28A4.91,4.91,0,0,1,1.45,31.8h0a4.91,4.91,0,0,1,3.47-1.45Zm28.76,0h39V25.76a19.49,19.49,0,0,0-39,0v4.58Zm-6.28,13V36.62H6.28v62h94V36.62H78.94v6.76a6.48,6.48,0,1,1-6.28-.12V36.62h-39v6.71a6.48,6.48,0,1,1-6.28,0Z"/></svg>
@@ -57,7 +58,7 @@
 </div>
 
     <!-- //////////////////////////////////////////////////////////////////////////////////////////menu -->
-    <div id="menu" class="md:flex hidden md:h-[60px] lg:h-[64px] xl:h-[68px]  justify-between items-center w-[92%] h-[68px] rounded-[100px] bg-[#28221E] mr-[4%] mt-1">
+    <div id="menu" data-aos="fade-down" data-aos-duration="300"  class="md:flex hidden md:h-[60px] lg:h-[64px] xl:h-[68px]  justify-between items-center w-[92%] h-[68px] rounded-[100px] bg-[#28221E] mr-[4%] mt-1">
 
         <ul class=" flex  md:w-[60%] md:text-[14px] xl:text-[16px] lg:w-[55%] xl:w-[50%] h-[100%]  text-[#cbcbcb] justify-evenly items-center">
             <li dir="ltr" style="cursor: pointer;" class="flex justify-between items-center text-white font-semibold ">صفحه اصلی<p class="font-bold text-4xl mb-[15%] pl-2">.</p></li>
@@ -71,8 +72,8 @@
 
     </div>
     <!-- //////////////////////////////////////////////////////////////////////////////////////////Landing Page -->
-    <div id="landing-page" class=" w-[92%]  m-auto mt-8 2xl:h-[550px] h-[427px] md:h-[360px] lg:h-[450px] flex justify-between  items-center xl:h-[500px]">
-        <div id="left-side-landing" class="h-[100%] flex m-auto sm:w-[75%]   flex-col justify-center items-center  w-9/10 md:w-[33%] bg-[#28221E] rounded-[20px]">
+    <div id="landing-page" class=" w-[92%]  m-auto mt-2 xl:mt-8 2xl:h-[550px] h-[427px] md:h-[360px] lg:h-[450px] flex justify-between  items-center xl:h-[500px]">
+        <div id="left-side-landing" data-aos="fade-left" data-aos-duration="400" class="h-[100%] flex m-auto sm:w-[75%]   flex-col justify-center items-center  w-9/10 md:w-[33%] bg-[#28221E] rounded-[20px]">
             <div class="w-[80%]  h-[90%] md:w-[70%] md:h-[80%] flex flex-col justify-around md:justify-evenly items-center md:items-start">
                 <div class=" text-center md:text-right">
                     <svg class="w-[65px] h-[15px] md:w-[130px] md:h-[30px]"  viewBox="0 0 85 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,15 +89,15 @@
                     <svg class="w-[7%] md:w-[10%]" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 404.43"><path fill-rule="nonzero" d="m68.69 184.48 443.31.55v34.98l-438.96-.54 173.67 159.15-23.6 25.79L0 199.94 218.6.02l23.6 25.79z"/></svg>
                     مشاهده محصولات
                 </div>
-                <div style="background-image: url(./img/landing2.jpg);background-size: 100% 100%;background-position: center;" id="slider-pc" class="h-[40%] w-[90%]  duration-500 md:hidden  rounded-[20px] "></div>
+                <div  style="background-image: url(./img/landing3.jpg);background-size: 100% 100%;background-position: center;" id="slider-pc" class="h-[40%] w-[90%]  duration-500 md:hidden  rounded-[20px] "></div>
      
             </div>
                
          </div>
-        <div style="background-image: url(./img/landing2.jpg);background-size: 100% 100%;background-position: center;" id="slider-pc" class="h-[100%] duration-500 xl:w-[70%]  rounded-[20px] hidden md:block md:w-[64%]"></div>
+        <div data-aos="fade-right" data-aos-duration="400" style="background-image: url(./img/landing3.jpg);background-size: 100% 100%;background-position: center;" id="slider-pc" class="h-[100%] duration-500 xl:w-[65%]  rounded-[20px] hidden md:block md:w-[64%]"></div>
     </div>
     
-    <div class="w-[100%] h-[120px] md:h-[80px] flex justify-center mt-12">
+    <div class="w-[100%] h-[120px] md:h-[80px] flex justify-center  md:mt-10">
         <svg width="100%"  height="100%" viewBox="0 0 1728 59" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_1_1329)">
 <rect width="1728" height="59" fill="#F2E5DA"/>
@@ -151,7 +152,7 @@
     </div>
 
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////Category -->
-    <div dir="ltr" class="w-[90%] md:w-[92%] h-[120px] md:h-[140px] mx-auto mt-4 md:mt-5 flex justify-end items-center">
+    <div dir="ltr" data-aos="fade-left" data-aos-duration="300" class="w-[90%] md:w-[92%] h-[120px] md:h-[140px] mx-auto -mt-4 md:mt-5 flex justify-end items-center">
     <div class="mr-2 md:mr-3 text-right">
         <p class="text-2xl md:text-3xl font-semibold">دسته بندی محصولات</p>
         <p class="text-sm md:text-base font-extralight text-[#656565]">! از میان بهترین ها ، بهترین هارا برای شما فراهم کرده ایم</p>
@@ -161,7 +162,7 @@
     </div>
 </div>
 
-    <div id="continer-category" class="h-[230px] lg:justify-evenly sm:justify-normal  mx-[4%] -mt-3 flex  items-center " style="overflow-x: auto;white-space: nowrap;overflow-y: hidden;">
+    <div data-aos="fade-right" data-aos-duration="300"  id="continer-category" class="h-[230px] lg:justify-evenly sm:justify-normal  mx-[4%] -mt-5 flex  items-center " style="overflow-x: auto;white-space: nowrap;overflow-y: hidden;">
 
         
 
@@ -169,7 +170,7 @@
 
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////Best ofer -->
     
-    <div class="w-[80%] relative h-[568px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
+    <div data-aos="fade-up" data-aos-duration="3000" class="w-[80%] relative h-[568px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
         <p class=" text-[#F2EBE5] pt-[3%] text-2xl font-extrabold ">تخفیفات ویژه</p>
         <div class="w-[87%] h-[85%] absolute top-[17.5%] rounded-t-[20px] bg-[#ffffff1a]"></div>
 
@@ -201,7 +202,7 @@
                         <div class=" bg-white w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200 ">
 
                             <div class="absolute z-10 left-3 top-3 w-[60px] h-[29px] rounded-[31px] bg-black flex justify-center text-white items-center text-[15px] font-sans">10%</div>
-                            <div class="w-[85%] h-[70%]  flex justify-center items-center group"><img class="w-[40%] group-hover:w-[42%] duration-300" src="./img/cafe.png" alt=""></div>
+                            <div class="w-[85%] h-[70%]  flex justify-center items-center group"><img class="w-[40%] group-hover:w-[42%] duration-300" src="./img/product/3.webp" alt=""></div>
                             <div class="w-[85%] h-[15%] flex flex-col items-end justify-evenly">
                                 <h2 class="font-stretch-150%">دانه قهوه روبوستا </h2>
                                 <p class="text-[#9B9895] text-[14px]">دانه قهوه</p>
@@ -232,27 +233,29 @@
      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////baner -->
    <div id="baner" class="grid gap-4 p-4 grid-cols-1 md:grid-cols-[1f 2fr 1fr] mt-[160px] w-[92%] mx-[4%]">
     <!-- بنر ۱ -->
-    <div class="h-[100px] bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md md:h-[150px] hover:bg-[#493e37] duration-300 cursor-pointer">
+    <div data-aos="fade-left" data-aos-duration="1500" class="h-[100px] bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md md:h-[150px] hover:bg-[#493e37] duration-300 cursor-pointer">
         <span class="text-white text-lg">جایگاه بنر ۱</span>
     </div>
 
     <!-- بخش وسط (دو بنر کنار هم فقط در موبایل) -->
-    <div class="grid grid-cols-2 gap-4  h-[175px] md:h-[150px] ">
-        <div class=" bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md  hover:bg-[#493e37] duration-300 h-[175px] md:h-[150px] cursor-pointer">
+    <div  class="grid grid-cols-2 gap-4  h-[175px] md:h-[150px] ">
+
+        <div data-aos="fade-up" data-aos-duration="1500" class=" bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md  hover:bg-[#493e37] duration-300 h-[175px] md:h-[150px] cursor-pointer">
             <span class="text-white text-lg">جایگاه بنر ۲</span>
         </div>
-        <div class=" bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md  hover:bg-[#493e37] duration-300 h-[175px] md:h-[150px] cursor-pointer">
+
+        <div data-aos="fade-up" data-aos-duration="1500" class=" bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md  hover:bg-[#493e37] duration-200 h-[175px] md:h-[150px] cursor-pointer">
             <span class="text-white text-lg">جایگاه بنر ۳</span>
         </div>
     </div>
 
     <!-- بنر ۴ -->
-    <div class="h-[100px] bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md md:h-[150px] hover:bg-[#493e37] duration-300 cursor-pointer">
+    <div data-aos="fade-right" data-aos-duration="1500" class="h-[100px] bg-[#28221E] flex items-center justify-center rounded-[12px] shadow-md md:h-[150px] hover:bg-[#493e37] duration-300 cursor-pointer">
         <span class="text-white text-lg">جایگاه بنر ۴</span>
     </div>
    </div>
 
-   <div dir="ltr" class="w-[92%] h-[126px] border-1 border-gray-300 mx-[4%] mt-9 rounded-[2222px] flex items-center justify-around">
+   <div data-aos="flip-down" data-aos-duration="500"   dir="ltr" class="w-[92%] h-[126px] border-1 border-gray-300 mx-[4%] mt-9 rounded-[2222px] flex items-center justify-around text-[10px] md:text-[16px]">
 
         <div class="w-[70%] bg-[#E9E9E8] h-[50%] rounded-[20px]">
               <ul dir="rtl" class="w-[100%] h-[100%] flex justify-evenly items-center">
@@ -279,14 +282,14 @@
 
    </div>
 
-   <div id="continer-product" class="lg:grid-cols-3 2xl:grid-cols-4 md:grid-cols-2 grid mx-[4%] gap-6 grid-cols-1  mt-12" > 
+   <div data-aos="flip-up" data-aos-duration="500" id="continer-product" class="lg:grid-cols-3 2xl:grid-cols-4 md:grid-cols-2 grid mx-[4%] gap-6 grid-cols-1  mt-12" > 
 
                     
                     
 
    </div>
 
-   <div dir="ltr" id="More-product" class="w-[205px] h-[50px] rounded-[100px] justify-evenly hidden bg-[#9E624C] m-auto mt-12  items-center text-white">
+   <div data-aos="fade-left" data-aos-duration="500" dir="ltr" id="More-product" class="w-[205px] h-[50px] rounded-[100px] justify-evenly hidden bg-[#9E624C] m-auto mt-12  items-center text-white">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M20.5 12H3.67" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -297,13 +300,13 @@
    </div>
 
 
-   <div class="w-[80%] relative h-[400px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
+   <div data-aos="flip-right" data-aos-duration="400"  class="w-[80%] relative h-[400px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
         <p class=" text-[#F2EBE5] pt-[3%] text-2xl font-extrabold ">اموزش های اریک کافه</p>
 
-        <div class="w-[90%] h-[427px] absolute top-[17%] grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-evenly gap-4 ">
+        <div  class="w-[90%] h-[427px] absolute top-[17%] grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-evenly gap-4 ">
 
 
-            <div class="h-[90%] sm:h-[100%] rounded-t-[20px] bg-[#ffffff1a] flex justify-center 2xl:h-[90%] xl:h-[80%] md:h-[80%] lg:h-[90%]">
+            <div data-aos="fade-left" data-aos-duration="3000" class="h-[90%] sm:h-[100%] rounded-t-[20px] bg-[#ffffff1a] flex justify-center 2xl:h-[90%] xl:h-[80%] md:h-[80%] lg:h-[90%]">
                 <div class="w-[95%] h-[100%] mt-[3%]   rounded-[20px] bg-white shadow-2xl flex flex-col items-center justify-evenly" >
 
                     <div class="w-[95%] h-[70%] ">
@@ -325,7 +328,7 @@
 
 
 
-            <div class=" h-[90%]  rounded-t-[20px] bg-[#ffffff1a] hidden md:flex justify-center 2xl:h-[90%] xl:h-[80%] md:h-[80%] lg:h-[90%]">
+            <div data-aos="fade-up" data-aos-duration="3000" class=" h-[90%]  rounded-t-[20px] bg-[#ffffff1a] hidden md:flex justify-center 2xl:h-[90%] xl:h-[80%] md:h-[80%] lg:h-[90%]">
                 <div class="w-[95%] h-[100%] mt-[3%]   rounded-[20px] bg-white shadow-2xl flex flex-col items-center justify-evenly" >
 
                     <div class="w-[95%] h-[70%] ">
@@ -346,11 +349,11 @@
             </div>
 
 
-            <div class=" h-[90%]  rounded-t-[20px] bg-[#ffffff1a] hidden justify-center 2xl:h-[90%] xl:h-[80%] xl:flex">
+            <div data-aos="fade-right" data-aos-duration="3000" class=" h-[90%]  rounded-t-[20px] bg-[#ffffff1a] hidden justify-center 2xl:h-[90%] xl:h-[80%] xl:flex">
                 <div class="w-[95%] h-[100%] mt-[3%]   rounded-[20px] bg-white shadow-2xl flex flex-col items-center justify-evenly" >
 
                     <div class="w-[95%] h-[70%] ">
-                        <img class="rounded-[10px]" src="./img/learn2.png" alt="">
+                        <img class="rounded-[10px]" src="./img/learn3.png" alt="">
                         <p class="text-[14px] font-extralight text-gray-800 mt-[3%]">!لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند</p>
                     </div>
                     <div class="w-[95%] h-[16%] mt-3.5 flex justify-between items-center">
@@ -427,8 +430,15 @@
 
     
 
-
-    <script src="./js/app.js"></script>
+    
+    
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/app.js" ></script>
 </body>
 </html>
 
