@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "vaziri" ;
+    src: url(./../font/Vazir-Medium-FD-WOL.ttf);
+}
+@font-face {
+    font-family: "MJ" ;
+    src: url(./../font/Vazir-Bold.ttf);
+}
+@font-face {
+    font-family: "morabba" ;
+    src: url(./../font/Morabba-Medium.ttf);
+}
+::selection{
+    background-color: rgba(138, 121, 115, 0.453);
+}
+*{
+    font-family: 'morabba';
+    scroll-behavior: smooth;
+    transition: .5s;
+    
+}
+#continer-category::-webkit-scrollbar{
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+}
+::-webkit-scrollbar{
+    opacity: 0;
+    max-width: 5px;
+    background-color: rgba(245, 245, 220, 0);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(115, 111, 101);
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+
+
+}
+::-webkit-scrollbar-track{
+   
+    width: 10px;
+    border-radius: 60px;
+}
+
+
+@media (min-width: 768px) {
+
+    #baner{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+}
+.li-focus{
+    background-color: white;
+    padding: 11px;
+
+}
