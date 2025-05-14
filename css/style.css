@@ -22,11 +22,12 @@
 #continer-category::-webkit-scrollbar{
     opacity: 0;
     background-color: rgb(255, 255, 255);
-    height: 2px;
+    height: 3px;
 }
 ::-webkit-scrollbar{
     opacity: 0;
     max-width: 5px;
+    height: 0px;
     background-color: rgba(245, 245, 220, 0);
     border: none;
 }
