@@ -8,26 +8,93 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<!-- class="sm:bg-pink-200 md:bg-blue-200 lg:bg-green-200 xl:bg-yellow-200 2xl:bg-[#FFF8F5] " -->
-<body style="font-family:vaziri;overflow-x: auto; max-width: 100%; " class="overflow-x-hidden" >
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////Header -->
-    <div id="header" class="w-full h-[80px] md:h-[100px] lg:h-[120px] flex items-center justify-between px-2 md:px-4 lg:px-8">
 
-    <div id="right-side-header" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="200"  class=" md:w-1/6 ml-[10%] sm:ml-[8%] md:ml-0 w-1/8 xl:w-1/8 flex justify-around items-center h-[50%] md:h-[60%] mr-2 md:mr-4 lg:mr-8">
+<body  style="font-family:vaziri;overflow-x: auto;  " class="overflow-x-hidden sm:bg-pink-200 md:bg-blue-200 lg:bg-green-200 xl:bg-yellow-200 2xl:bg-[#FFF8F5] " >
+
+
+<div id="modal-screen" class="fixed inset-0 z-50  bg-black/50 backdrop-blur-sm hidden">
+
+
+        <div class="w-[500px]  bg-[#ffffff] absolute  left-[6%] top-[9%] p-4 rounded-[15px]  ">
+            <div class="w-[100%] h-[60px]  border-b-2 border-[#9E624C] flex justify-between items-center p-2 mb-5">
+                <p class="text-[1.5rem]">سبد خرید</p>
+                <div id="close-X" class="w-[30px] h-[30px] mt-1 bg-[#972121] rounded-[50px] text-[.9rem] text-white flex justify-center items-center pt-[2px] font-extralight cursor-pointer">x</div>
+            </div >
+
+            <div id="continer-basket">
+
+                    <a   href="">
+                    <div class="w-[100%] h-[96px]  rounded-[5px] hover:shadow-2xl flex justify-between  items-center pb-5">
+                        <div class="w-[22%] h-[100%] flex  justify-center items-center">
+                            <img class="w-[40%]" src="../img/product/3.webp" alt="">
+                        </div>
+
+
+                        <div class="flex flex-col justify-evenly items-start w-[48%] h-[100%] ">
+                            <h1 class="text-[.9rem]">ماگ سرامیکی طرح خاص</h1>
+                            <p class=" text-[.7rem] text-[#9B9895]">قهوه آسیاب</p>
+                            <p class="text-[#9E624C] font-bold text-[.8rem]">22.000.000</p>
+
+                        </div>
+
+
+                        <div class="w-[30%] h-[100%]  flex flex-col justify-center gap-4 items-center">
+                            <div class="w-[95%] h-[26px]  flex justify-between items-center" >
+                                <div class="w-[31%] h-[100%] rounded-[5px] bg-[#22c55e] hover:bg-[#43895d] flex justify-center items-center text-white text-[1.2rem]">+</div>
+                                <div class="w-[31%] h-[100%] rounded-[5px] bg-[#dc2626] hover:bg-[#b20600] flex justify-center items-center text-[.6rem] text-white">remove</div>
+                                <div class="w-[31%] h-[100%] rounded-[5px] bg-[#eab308] hover:bg-[#d8de16] flex justify-center items-center text-white text-[1.2rem] pb-1">-</div>
+                            </div>
+                            <div  class="flex justify-center items-center gap-1 text-[.9rem]">
+                                <p>تعداد :</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+
+                
+                        </div>
+                    </a>
+
+            </div>
+            
+           
+            
+
+
+            <div class="w-[100%] h-[60px]  border-t-2 border-[#9E624C] flex justify-between items-center p-2 mt-5">
+                <div class="flex text-[.9rem] gap-1 text-[#28221E]"><p>مبلغ کل:</p><p id="sumOfPrice">123.12222</p></div>
+                <div class="w-[60%] h-[100%] -pl-3  flex justify-between items-center">
+                    <div id="remove-all-product" class="h-[90%] w-[48%] bg-[#d92525] flex justify-center items-center text-[.9rem] rounded-[5px] cursor-pointer text-white">پاکسازی</div>
+                    <div class="h-[90%] w-[48%] bg-[#049467] flex justify-center items-center text-[.9rem] rounded-[5px] cursor-pointer text-white">تکمیل خرید</div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <header>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////Header -->
+    <div id="header" class="w-[100%] h-[100px]   md:h-[100px] lg:h-[120px] flex items-center justify-between px-2 md:px-4 lg:px-8">
+
+    
+
+    <div id="right-side-header" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="200"  class=" 2xl:mr-[2%] md:w-1/6 ml-[10%] sm:ml-[8%] md:ml-0 w-1/8 xl:w-1/8 flex justify-around items-center h-[50%] md:h-[60%] mr-2 md:mr-4 lg:mr-8">
         <div dir="ltr" class=" justify-center items-center hidden md:flex font-bold text-xs md:text-sm lg:text-base">
             <p class="text-[#9E624C]">021-</p>
             64297655
         </div>
-        <div class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] hidden md:flex lg:w-[50px] lg:h-[50px] rounded-full bg-[#F2E5DA] justify-center items-center">
+        <div class="w-[40px] h-[40px] md:w-[40px] md:h-[40px] hidden md:flex lg:w-[50px] lg:h-[50px] rounded-full bg-[#F2E5DA] justify-center items-center">
              <?xml  version="1.0" encoding="utf-8"?><svg width="50%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 96.84" style="enable-background:new 0 0 122.88 96.84," xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#9E624C;}</style><g><path class="st0" d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"/></g></svg>
         </div>
-        <div class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] md:hidden lg:h-[50px] rounded-full bg-[#F2E5DA] flex justify-center items-center">
+        <div class="w-[35px] h-[35px] md:w-[40px] md:h-[40px] lg:w-[50px] md:hidden lg:h-[50px] rounded-full bg-[#F2E5DA] flex justify-center items-center">
              <svg xmlns="http://www.w3.org/2000/svg" width="46%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 474.051"><path d="M11.216 0H88.37c6.169 0 11.216 5.047 11.216 11.216v70.947c0 6.17-5.047 11.217-11.216 11.217H11.216C5.047 93.38 0 88.333 0 82.163V11.216C0 5.047 5.047 0 11.216 0zm152.662 380.672h336.906c6.169 0 11.216 5.05 11.216 11.216v70.947c0 6.166-5.051 11.216-11.216 11.216H163.878c-6.166 0-11.217-5.046-11.217-11.216v-70.947c0-6.169 5.047-11.216 11.217-11.216zm-152.662 0H88.37c6.169 0 11.216 5.047 11.216 11.216v70.947c0 6.17-5.047 11.216-11.216 11.216H11.216C5.047 474.051 0 469.005 0 462.835v-70.947c0-6.169 5.047-11.216 11.216-11.216zm152.662-190.336h336.906c6.169 0 11.216 5.05 11.216 11.216v70.947c0 6.166-5.051 11.216-11.216 11.216H163.878c-6.166 0-11.217-5.046-11.217-11.216v-70.947c0-6.17 5.047-11.216 11.217-11.216zm-152.662 0H88.37c6.169 0 11.216 5.046 11.216 11.216v70.947c0 6.17-5.047 11.216-11.216 11.216H11.216C5.047 283.715 0 278.669 0 272.499v-70.947c0-6.17 5.047-11.216 11.216-11.216zM163.878 0h336.906C506.953 0 512 5.051 512 11.216v70.947c0 6.166-5.051 11.217-11.216 11.217H163.878c-6.166 0-11.217-5.047-11.217-11.217V11.216C152.661 5.047 157.708 0 163.878 0z"/></svg>
         </div>
     </div>
 
-    <div id="center-logo-header" data-aos-easing="linear" data-aos="zoom-out" data-aos-duration="200" class="w-1/5 md:w-1/6 h-full flex justify-center items-center">
-        <svg class="w-[70%] md:w-[60%] lg:w-[50%] xl:w-[45%]"    viewBox="0 0 147 51" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <div id="center-logo-header" data-aos-easing="linear" data-aos="zoom-out" data-aos-duration="200" class="w-2/7 md:w-1/6 h-full flex justify-center items-center">
+        <svg class="w-[80%] sm:w-[50%] md:w-[60%] lg:w-[50%] xl:w-[45%]"    viewBox="0 0 147 51" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="147" height="51" fill="url(#pattern0_1_1282)"/>
 <defs>
 <pattern id="pattern0_1_1282" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -39,38 +106,42 @@
 
     </div>
 
-    <div id="left-side-header" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="200" class="ml-2 md:ml-4 lg:ml-9 w-2/8 sm:w-1/5 md:w-1/6 lg:w-2/9 xl:w-1/9 h-[50%] md:h-[60%] flex justify-between items-center" dir="ltr">
-        <div id="basket" style="cursor: pointer;" class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] rounded-full flex justify-center items-center bg-[#9E624C] ">
+        <div id="left-side-header" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="200" class=" mr-9 sm:mr-0 ml-2 md:-ml-[2.5%] lg:-ml-[5.5%] xl:-ml-[1%] w-1/7 sm:w-1/5 md:w-1/6 lg:w-2/9 xl:w-1/9 h-[50%] md:h-[60%] flex justify-center items-center" dir="ltr">
+        <div id="basket" style="cursor: pointer; " class="w-[35px]  z-[60]  h-[35px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] rounded-full flex justify-center items-center bg-[#F2E5DA] relative">
             
-<svg id="Layer_1" data-name="Layer 1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="40%" viewBox="0 0 106.53 122.88"><title>shopping-bag</title><path d="M4.93,30.34H27.41V25.76a25.77,25.77,0,0,1,51.53,0v4.58H101.6a4.91,4.91,0,0,1,3.47,1.45h0a4.9,4.9,0,0,1,1.44,3.48v69.9a17.75,17.75,0,0,1-17.7,17.7H17.7A17.75,17.75,0,0,1,0,105.18V35.28A4.91,4.91,0,0,1,1.45,31.8h0a4.91,4.91,0,0,1,3.47-1.45Zm28.76,0h39V25.76a19.49,19.49,0,0,0-39,0v4.58Zm-6.28,13V36.62H6.28v62h94V36.62H78.94v6.76a6.48,6.48,0,1,1-6.28-.12V36.62h-39v6.71a6.48,6.48,0,1,1-6.28,0Z"/></svg>
+        <svg id="Layer_1" data-name="Layer 1" fill="#000000" xmlns="http://www.w3.org/2000/svg" width="45%" viewBox="0 0 106.53 122.88"><title>shopping-bag</title><path d="M4.93,30.34H27.41V25.76a25.77,25.77,0,0,1,51.53,        0v4.58H101.6a4.91,4.91,0,0,1,3.47,1.45h0a4.9,4.9,0,0,1,1.44,3.48v69.9a17.75,17.75,0,0,1-17.7,17.7H17.7A17.75,17.75,0,0,1,0,105.18V35.28A4.91,4.91,0,0,1,1.45,31.8h0a4.91,4.91,0,0,1,3.47-1.45Zm28.76,0h39V25.76a19.49,      19.49,0,0,0-39,0v4.58Zm-6.28,13V36.62H6.28v62h94V36.62H78.94v6.76a6.48,6.48,0,1,1-6.28-.12V36.62h-39v6.71a6.48,6.48,0,1,1-6.28,0Z"/></svg>
 
- 
+        <div id="count-all-product" class="w-[42%] h-[42%] rounded-[50px] bg-[#9E624C] absolute -right-2 top-0 flex justify-center pt-1 items-center text-white text-[.7rem]">
+
+            1
+
         </div>
-        <a class="w-2/3 md-w-[63%] h-[60%] md:h-[70%]" href="#">
-            <div style="border: 2px solid #9E624C;" class="text-[#9E624C] hover:bg-[#9E624C] duration-300 hover:scale-105 hover:text-white rounded-4xl text-[10px] md:text-[12px] lg:text-[14px] flex justify-center items-center w-full h-full">
-                ورود / ثبت نام
-            </div>
-        </a>
-    </div>
+        
+        </div>
+        
+        
 
-    
+        </div>
 
-</div>
+    </div> 
 
     <!-- //////////////////////////////////////////////////////////////////////////////////////////menu -->
     <div id="menu" data-aos="fade-down" data-aos-duration="300"  class="md:flex hidden md:h-[60px] lg:h-[64px] xl:h-[68px]  justify-between items-center w-[92%] h-[68px] rounded-[100px] bg-[#28221E] mr-[4%] mt-1">
 
         <ul class=" flex  md:w-[60%] md:text-[14px] xl:text-[16px] lg:w-[55%] xl:w-[50%] h-[100%]  text-[#cbcbcb] justify-evenly items-center">
-            <li dir="ltr" style="cursor: pointer;" class="flex justify-between items-center text-white font-semibold ">صفحه اصلی<p class="font-bold text-4xl mb-[15%] pl-2">.</p></li>
-            <li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 " >لیست محصولات </li>
-            <li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">خدمات</li>
-            <li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">اموزش ها</li>
-            <li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">درباره ما</li>
-            <li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">تماس با ما</li>
+            <a href="#"><li dir="ltr" style="cursor: pointer;" class="flex justify-between items-center text-white font-semibold ">صفحه اصلی<p class="font-bold text-4xl mb-[15%] pl-2">.</p></li></a>
+            <a href="#continer-product"><li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 " >لیست محصولات </li></a>
+            <a href="#learning"><li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">خدمات</li></a>
+            <a href=""><li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">اموزش ها</li></a>
+            <a href=""><li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">درباره ما</li></a>
+            <a href=""><li style="list-style: none;cursor: pointer;" class="hover:text-white duration-500 ">تماس با ما</li></a>
         </ul>
         <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;cursor: pointer;" dir="ltr" class="w-[150px] md:text-[15px] h-[67%] bg-[#ffffff31] hover:bg-[#ffffff0c] duration-300 ml-3 rounded-[37px]  flex justify-center items-center text-white"><svg class="md:w-[20%] " width="25%" style="padding-right: 10px;" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path fill="#fff" fill-rule="nonzero" d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.483 47.121-.092 85.407 38.03 85.499 85.16.091 47.129-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.091c.141 72.602 59.106 131.327 131.69 131.186 72.592-.141 131.35-59.09 131.209-131.692-.141-72.577-59.114-131.335-131.715-131.194-72.585.141-131.325 59.115-131.184 131.7zm237.104-137.091c.033 16.953 13.817 30.681 30.772 30.648 16.961-.033 30.689-13.811 30.664-30.764-.033-16.954-13.818-30.69-30.78-30.657-16.962.033-30.689 13.818-30.656 30.773zm-208.696 345.4c-24.958-1.087-38.511-5.234-47.543-8.709-11.961-4.629-20.496-10.178-29.479-19.094-8.966-8.95-14.532-17.46-19.202-29.397-3.508-9.032-7.73-22.569-8.9-47.527-1.269-26.982-1.559-35.077-1.683-103.432-.133-68.339.116-76.434 1.294-103.441 1.069-24.942 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.479 8.949-8.982 17.459-14.532 29.403-19.202 9.025-3.525 22.561-7.714 47.511-8.9 26.998-1.277 35.085-1.551 103.423-1.684 68.353-.132 76.448.108 103.456 1.295 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.144 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.412 3.524 9 7.714 22.553 8.892 47.494 1.285 26.999 1.576 35.095 1.7 103.433.132 68.355-.117 76.451-1.302 103.441-1.087 24.958-5.226 38.52-8.709 47.561-4.629 11.952-10.161 20.487-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.559-103.448 1.684-68.338.132-76.424-.125-103.431-1.294zM149.977 1.773c-27.239 1.285-45.843 5.648-62.101 12.018-16.829 6.561-31.095 15.354-45.286 29.604C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.547 1.302 27.231 5.649 45.828 12.019 62.093 6.569 16.83 15.353 31.088 29.611 45.288 14.25 14.201 28.55 22.918 45.404 29.438 16.282 6.295 34.902 10.583 62.15 11.778 27.305 1.203 36.022 1.468 105.521 1.335 69.532-.132 78.25-.439 105.555-1.733 27.239-1.303 45.826-5.665 62.1-12.019 16.829-6.586 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.405 6.304-16.282 10.592-34.903 11.777-62.134 1.195-27.322 1.478-36.048 1.344-105.556-.133-69.516-.447-78.225-1.741-105.523-1.294-27.255-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.079-29.602-45.287-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.305-34.903-10.601-62.15-11.779C333.747.164 325.03-.102 255.506.031c-69.507.133-78.224.431-105.529 1.742z"/></svg>Erik.Cafe</div>
 
     </div>
+
+    </header>
+    
     <!-- //////////////////////////////////////////////////////////////////////////////////////////Landing Page -->
     <div id="landing-page" class=" w-[92%]  m-auto mt-2 xl:mt-8 2xl:h-[550px] h-[427px] md:h-[360px] lg:h-[450px] flex justify-between  items-center xl:h-[500px]">
         <div id="left-side-landing" data-aos="fade-left" data-aos-duration="400" class="h-[100%] flex m-auto sm:w-[75%]   flex-col justify-center items-center  w-9/10 md:w-[33%] bg-[#28221E] rounded-[20px]">
@@ -97,7 +168,7 @@
         <div data-aos="fade-right" data-aos-duration="400" style="background-image: url(./img/landing3.jpg);background-size: 100% 100%;background-position: center;" id="slider-pc" class="h-[100%] duration-500 xl:w-[65%]  rounded-[20px] hidden md:block md:w-[64%]"></div>
     </div>
     
-    <div class="w-[100%] h-[120px] md:h-[80px] flex justify-center  md:mt-10">
+    <div class="max-width: 100% h-[120px] md:h-[80px] flex justify-center  md:mt-10">
         <svg width="100%"  height="100%" viewBox="0 0 1728 59" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_1_1329)">
 <rect width="1728" height="59" fill="#F2E5DA"/>
@@ -187,14 +258,14 @@
                 </div>
             </div>
 
-            <div dir="ltr" class=" h-[450px] w-[99%]  flex" >
-                <div class="h-[100%] w-[5%]  flex justify-center items-center :">
+            <div dir="ltr" class=" h-[450px] w-[99%] justify-around  flex relative" >
+                <div class="h-[100%] w-[5%]  flex justify-center items-center : absolute left-[3%]">
                     <div class="w-[40px] h-[40px] rounded-[14px] flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="25%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 267 512.43"><path fill-rule="nonzero" d="M263.78 18.9c4.28-4.3 4.3-11.31.04-15.64a10.865 10.865 0 0 0-15.48-.04L3.22 248.38c-4.28 4.3-4.3 11.31-.04 15.64l245.16 245.2c4.28 4.3 11.22 4.28 15.48-.05s4.24-11.33-.04-15.63L26.5 256.22 263.78 18.9z"/>
                         </svg>
                     </div>
                 </div>
-                <div class="w-[90%] h-[100%]  lg:grid-cols-3 grid items-center  gap-5">
+                <div class="w-[80%] h-[100%]  xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid items-center  gap-5">
 
 
                     <a href="#">
@@ -258,8 +329,8 @@
   
 
                 </div>
-                <div class="h-[100%] w-[5%]  flex justify-center items-center">
-                    <div class="w-[40px] h-[40px] rounded-[14px] flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
+                <div class="h-[100%] w-[5%]  flex justify-cml-3enter items-center absolute right-[3%]">
+                    <div class="w-[40px] h-[40px]  rounded-[14px] flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
                           <svg xmlns="http://www.w3.org/2000/svg"  width="25%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 267 512.43"><path fill-rule="nonzero" d="M3.22 18.9c-4.28-4.3-4.3-11.31-.04-15.64s11.2-4.35 15.48-.04l245.12 245.16c4.28 4.3 4.3 11.31.04 15.64L18.66 509.22a10.874 10.874 0 0 1-15.48-.05c-4.26-4.33-4.24-11.33.04-15.63L240.5 256.22 3.22 18.9z"/></svg>
                     </div>
                 </div>
@@ -294,7 +365,7 @@
     </div>
    </div>
 
-   <div data-aos="flip-down" data-aos-duration="500"   dir="ltr" class="w-[92%] h-[126px] border-1 border-gray-300 mx-[4%] mt-9 rounded-[2222px] flex items-center justify-around text-[10px] md:text-[16px]">
+   <div data-aos="flip-down" data-aos-duration="500"   dir="ltr" class="w-[92%] h-[126px] border-1 border-gray-300 mx-[4%] mt-9 rounded-[2222px] flex items-center justify-around text-[10px] md:text-[16px]"> 
 
         <div class="w-[70%] bg-[#E9E9E8] h-[50%] rounded-[20px]">
               <ul dir="rtl" class="w-[100%] h-[100%] flex justify-evenly items-center">
@@ -319,16 +390,16 @@
             </div>
         </div>
 
-   </div>
+   </div> 
 
-   <div  id="continer-product" class="lg:grid-cols-3 2xl:grid-cols-4 md:grid-cols-2 grid mx-[4%] gap-6 grid-cols-1  mt-12" > 
+   <div  id="continer-product" class="lg:grid-cols-3 2xl:grid-cols-4 md:grid-cols-2 grid mx-auto gap-6 grid-cols-1  mt-12 " > 
 
                     
                     
 
    </div>
 
-   <div data-aos="fade-left" data-aos-duration="500" dir="ltr" id="More-product" class="w-[205px] h-[50px] rounded-[100px] justify-evenly hidden bg-[#9E624C] m-auto mt-12  items-center text-white">
+   <div  dir="ltr" id="More-product" class="w-[205px] h-[50px] rounded-[100px] justify-evenly hidden bg-[#9E624C] mx-auto mt-12  items-center text-white">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M20.5 12H3.67" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -339,7 +410,7 @@
    </div>
 
 
-   <div data-aos="flip-right" data-aos-duration="400"  class="w-[80%] relative h-[400px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
+   <div data-aos="flip-right" data-aos-duration="400" id="learning"  class="w-[80%] relative h-[400px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
         <p class=" text-[#F2EBE5] pt-[3%] text-2xl font-extrabold ">اموزش های اریک کافه</p>
 
         <div  class="w-[90%] h-[427px] absolute top-[17%] grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-evenly gap-4 ">
@@ -424,13 +495,13 @@
 
     </div>
 
-    <div class="h-[395px] w-[100%] bg-[#28221E] mt-[250px] flex flex-col items-center justify-evenly">
+    <div class="md:h-[395px] h-[745px] w-[100%] bg-[#28221E] mt-[250px] flex flex-col items-center justify-evenly ">
 
-        <h1 class="w-[10%] text-4xl text-white font-extrabold">اریک کافه</h1>
-        <p class="w-[25%] h-[58px] text-gray-200">!لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند</p>
-        <div class="w-[70%] h-[15%]  border-b-2 border-[#FFFFFF1A] flex justify-center items-center">
+        <h1 class="w-[60%] flex justify-center items-center  md:w-[15%] text-4xl text-white font-extrabold">اریک کافه</h1>
+        <p class="md:w-[30%] w-[70%] md:m-3 h-[58px] text-gray-200">!لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند</p>
+        <div class="xl:w-[70%] md:w-[90%] w-[90%] h-[30%] md:h-[15%] border-b-2 border-[#FFFFFF1A] flex justify-center items-center">
 
-            <ul  class="w-[98%] h-[70%]  grid md:grid-cols-6 sm:grid-cols-2 items-center justify-around  text-white">
+            <ul  class="w-[98%] h-[70%]  grid md:grid-cols-6 grid-cols-2 items-center justify-around  text-white">
                 <li class="m-auto">دسته بندی کلی یک</li>
                 <li class="m-auto">دسته بندی کلی یک</li>
                 <li class="m-auto">دسته بندی کلی یک</li>
@@ -441,8 +512,8 @@
             </ul>
 
         </div>
-        <div class="w-[70%] h-[30%]  flex justify-between items-center">
-            <div class="w-[30%] h-[100%] flex items-center">
+        <div class="w-[70%] md:h-[30%] h-[40%]  md:flex-row  flex flex-col justify-between items-center">
+            <div class="md:w-[30%] w-[70%] h-[100%] flex  items-center">
                 <div class="w-[15%]  h-[100%] flex flex-col justify-evenly items-center">
                     <div class="w-[40px] h-[40px] rounded-[44px] bg-[#FFFFFF08] flex justify-center items-center">
 
@@ -462,7 +533,7 @@
                     <div style="text-align: right;" class="text-white mt-2 w-[100%] h-[50%]">تهران خیابان تهرانی کوچه تهران پلاک ۱۲</div>
                 </div>
             </div>
-            <div class="w-[20%] h-[100%] flex items-center justify-end "><img class="w-[40%]" src="./img/enamad.png" alt=""> <img class="w-[34%]" src="./img/zarinpal.png" alt=""></div>
+            <div class="md:w-[20%] w-[70%] h-[100%] flex items-center justify-center md:justify-end "><img class="w-[40%]" src="./img/enamad.png" alt=""> <img class="w-[34%]" src="./img/zarinpal.png" alt=""></div>
         </div>
 
     </div>
@@ -477,7 +548,10 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/data.js" ></script>
     <script src="./js/app.js" ></script>
+    <script src="./js/basket-app.js" ></script>
+    
 </body>
 </html>
 

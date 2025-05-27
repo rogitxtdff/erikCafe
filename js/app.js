@@ -51,169 +51,6 @@ let categoryProduct = [
   },
 ];
 
-const coffeeProducts = [
-  {
-    id: 1,
-    name: "قهوه اسپرسو ایتالیایی",
-    category: "قهوه آسیاب",
-    price: 250000,
-    discount: 10,
-    img: "1.webp",
-  },
-  {
-    id: 2,
-    name: "قهوه ترک مرغوب",
-    category: "قهوه آسیاب",
-    price: 180000,
-    discount: 5,
-    img: "2.webp",
-  },
-  {
-    id: 3,
-    name: "قهوه فرانسه کلاسیک",
-    category: "قهوه آسیاب",
-    price: 220000,
-    discount: 15,
-    img: "1.webp",
-  },
-  {
-    id: 4,
-    name: "تمپر استیل 58mm",
-    category: "ابزار باریستا",
-    price: 130000,
-    discount: 0,
-    img: "4.webp",
-  },
-  {
-    id: 5,
-    name: "پیچر شیر 350ml",
-    category: "ابزار باریستا",
-    price: 95000,
-    discount: 10,
-    img: "5.webp",
-  },
-  {
-    id: 6,
-    name: "ترازو دیجیتال دقیق",
-    category: "ابزار باریستا",
-    price: 320000,
-    discount: 12,
-    img: "6.webp",
-  },
-  {
-    id: 7,
-    name: "بویلر آب جوش صنعتی 10L",
-    category: "بویلر آب جوش",
-    price: 2400000,
-    discount: 8,
-    img: "1.webp",
-  },
-  {
-    id: 8,
-    name: "بویلر آب جوش کوچک 5L",
-    category: "بویلر آب جوش",
-    price: 1800000,
-    discount: 5,
-    img: "2.webp",
-  },
-  {
-    id: 9,
-    name: "بویلر تحت فشار 15L",
-    category: "بویلر آب جوش",
-    price: 3500000,
-    discount: 10,
-    img: "1.webp",
-  },
-  {
-    id: 10,
-    name: "میز بار کافی شاپ",
-    category: "تجهیزات کافه و رستوران",
-    price: 2700000,
-    discount: 12,
-    img: "4.webp",
-  },
-  {
-    id: 11,
-    name: "دستگاه آسیاب قهوه",
-    category: "تجهیزات کافه و رستوران",
-    price: 1900000,
-    discount: 8,
-    img: "5.webp",
-  },
-  {
-    id: 12,
-    name: "دستگاه اسپرسو ساز نیمه صنعتی",
-    category: "تجهیزات کافه و رستوران",
-    price: 5800000,
-    discount: 15,
-    img: "6.webp",
-  },
-  {
-    id: 13,
-    name: "ویترین شیشه‌ای شو کیک",
-    category: "شو کیک",
-    price: 4500000,
-    discount: 10,
-    img: "1.webp",
-  },
-  {
-    id: 14,
-    name: "جعبه نگهداری کیک",
-    category: "شو کیک",
-    price: 320000,
-    discount: 5,
-    img: "2.webp",
-  },
-  {
-    id: 15,
-    name: "صفحه گردان تزئین کیک",
-    category: "شو کیک",
-    price: 150000,
-    discount: 8,
-    img: "1.webp",
-  },
-  {
-    id: 16,
-    name: "قهوه دمی آمریکانو",
-    category: "قهوه آسیاب",
-    price: 200000,
-    discount: 10,
-    img: "4.webp",
-  },
-  {
-    id: 17,
-    name: "فرنچ پرس استیل",
-    category: "ابزار باریستا",
-    price: 450000,
-    discount: 12,
-    img: "5.webp",
-  },
-  {
-    id: 18,
-    name: "ماگ سرامیکی طرح خاص",
-    category: "ابزار باریستا",
-    price: 95000,
-    discount: 5,
-    img: "6.webp",
-  },
-  {
-    id: 19,
-    name: "کپسول قهوه اسپرسو",
-    category: "قهوه آسیاب",
-    price: 270000,
-    discount: 15,
-    img: "1.webp",
-  },
-  {
-    id: 20,
-    name: "شیرجوش مسی حرفه‌ای",
-    category: "ابزار باریستا",
-    price: 280000,
-    discount: 10,
-    img: "2.webp",
-  },
-];
-
 let selectedCategory = "all";
 
 const continerCategory = document.querySelector("#continer-category");
@@ -371,7 +208,7 @@ function addPruduct(array, IsAll) {
       continerProduct.insertAdjacentHTML(
         "beforeend",
         `
-                <a href="#">
+                <a href="./product/index.html?id=${product.id}">
                     <div  class="bg-white w-[321px] h-[410px] rounded-[20px] m-auto relative flex flex-col items-center border border-gray-200 " style="cursor: auto;" >
                         <div class="absolute z-10 left-3 top-3 w-[60px] h-[29px] rounded-[31px] bg-black flex justify-center text-white items-center text-[15px] font-sans">
                             ${product.discount}%
@@ -414,3 +251,4 @@ liCat.forEach(function (li) {
 moreProduct.addEventListener("click", function () {
   changeProduct(selectedCategory, true);
 });
+

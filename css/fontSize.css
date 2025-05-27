@@ -1,0 +1,98 @@
+/* دستگاه‌های بسیار کوچک (موبایل‌های قدیمی) */
+@media only screen and (max-width: 320px) {
+  body {
+    font-family: inherit; /* استفاده از فونت اصلی صفحه */
+    font-size: 14px; /* اندازه فونت مناسب برای نمایشگرهای کوچک */
+  }
+}
+
+/* موبایل‌ها - حالت عمودی */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  body {
+    font-family: inherit;
+    font-size: 15px;
+  }
+}
+
+/* موبایل‌ها - حالت افقی و تبلت‌های کوچک */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-family: inherit;
+    font-size: 16px;
+  }
+}
+
+/* تبلت‌ها - حالت عمودی */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-family: inherit;
+    font-size: 17px;
+  }
+}
+
+/* تبلت‌ها - حالت افقی و لپ‌تاپ‌های کوچک */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-family: inherit;
+    font-size: 18px;
+  }
+}
+
+/* لپ‌تاپ‌ها و دسکتاپ‌های متوسط */
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+  body {
+    font-family: inherit;
+    font-size: 19px;
+  }
+}
+
+/* دسکتاپ‌های بزرگ */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  body {
+    font-family: inherit;
+    font-size: 20px;
+  }
+}
+
+/* نمایشگرهای بسیار بزرگ (4K و بالاتر) */
+@media only screen and (min-width: 1920px) {
+  body {
+    font-family: inherit;
+    font-size: 22px;
+  }
+}
+
+/* چاپگرها */
+@media print {
+  body {
+    font-family: inherit;
+    font-size: 12pt; /* استفاده از واحد pt برای چاپ مناسب‌تر است */
+  }
+}
+
+/* دستگاه‌هایی با نمایشگر با وضوح بالا (Retina) */
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  body {
+    font-family: inherit;
+    /* ممکن است نیاز به افزایش جزئی اندازه فونت برای وضوح بالاتر باشد */
+  }
+}
+
+/* دستگاه‌های لمسی */
+@media (pointer: coarse) {
+  body {
+    font-family: inherit;
+    /* افزایش اندازه فونت برای قابلیت لمس بهتر */
+    font-size: calc(100% + 2px);
+  }
+}
+
+/* دستگاه‌های غیر لمسی (مانند ماوس) */
+@media (pointer: fine) {
+  body {
+    font-family: inherit;
+  }
+}

@@ -59,3 +59,20 @@
     padding: 11px;
 
 }
+.active{
+    
+    color: black;
+    border-bottom: 3px solid #9E624C;
+    
+}
+#h1-About-product{
+    transition-duration: 0ms;
+}
+
+.seling{
+    background-color: #f6e8e3e0;
+}
+
+.seling #count {
+    display: flex;
+}
