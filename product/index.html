@@ -9,14 +9,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/fontSize.css">
 </head>
-<!-- sm:bg-pink-100 md:bg-blue-100 lg:bg-green-100 xl:bg-yellow-100 2xl:bg-[#FFF8F5] -->
-<body  style="font-family:vaziri;overflow-x: auto;  " class=" overflow-x-hidden  " >
+
+<body  style="overflow-x: auto;  " class=" overflow-x-hidden " >
     
 
     <div id="modal-screen" class="fixed inset-0 z-50  bg-black/50 backdrop-blur-sm hidden">
 
 
-        <div class="w-[500px]  bg-[#ffffff] absolute  left-[6%] top-[9%] p-4 rounded-[15px]  ">
+        <div class="sm:w-[500px] w-[100%]  bg-[#ffffff] absolute sm:left-[6%] sm:top-[9%] p-4 rounded-b-[15px] sm:rounded-[15px]  ">
             <div class="w-[100%] h-[60px]  border-b-2 border-[#9E624C] flex justify-between items-center p-2 mb-5">
                 <p class="text-[1.5rem]">سبد خرید</p>
                 <div id="close-X" class="w-[30px] h-[30px] mt-1 bg-[#972121] rounded-[50px] text-[.9rem] text-white flex justify-center items-center pt-[2px] font-extralight cursor-pointer">x</div>
@@ -149,31 +149,36 @@
 
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// product -->
 
-    <div class="w-[92%] mx-[4%] 2xl:h-[565px] xl:h-[530px] lg:h-[490px]  mt-10 flex flex-col md:flex-row justify-around items-center gap-[2%] ">
+
+
+<main>
+
+    <div class="md:w-[92%] w-[90%] mx-[5%] md:mx-[4%] h-auto  2xl:h-[565px] xl:h-[520px] lg:h-[460px] md:h-[400px]  mt-10 flex flex-col md:flex-row justify-around items-center gap-[2%] ">
+            
 
 
 
-        <div  class=" bgre  w-[30%] h-[100%] flex flex-col justify-between items-center  ">
+        <div  class="   xl:w-[30%] md:h-[100%] h-[430px] md:w-[32%] w-[100%] flex flex-col justify-between items-center   ">
 
-            <div class=" w-[98%] 2xl:h-[466px] xl:h-[430px] border-1  border-[#E9E9E8] rounded-[15px] relative flex justify-center items-center group">
-                <div id="discount" class="absolute top-3 left-3 bg-[#28221E] text-white px-4 py-1 pt-[5.5px] rounded-[31px]">20%</div>
+            <div class=" w-[98%] 2xl:h-[466px] xl:h-[430px] lg:h-[380px] md:h-[320px] h-[350px] border-1  border-[#E9E9E8] rounded-[15px] relative flex justify-center items-center group">
+                <div id="discount" class="absolute top-3 left-3 bg-[#28221E] text-white px-4 py-[2px] md:py-1 pt-[5.5px] rounded-[31px] text-[1rem]">20%</div>
                 <img id="img" class="w-[40%] group-hover:w-[45%] duration-300" src="../img/product/3.webp" alt="">
             </div>
             
-            <div class="w-[98%] 2xl:h-[80px] xl:h-[70px]  flex justify-between items-center">
-                <div class="w-[18%] h-[78px]  rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
+            <div class="w-[98%] 2xl:h-[80px] xl:h-[70px] lg:h-[65px] md:h-[55px] h-[67px] flex justify-between items-center">
+                <div class="w-[18%] h-[100%]  rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
                     <div class=" text-[#9B9895] text-6xl font-sans mb-[30%] select-none">...</div>
                 </div>
-                <div class="w-[18%] group h-[78px] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
+                <div class="w-[18%] group h-[100%] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
                     <img class="w-[30%] group-hover:w-[35%] duration-300" src="../img/product/3.webp" alt="">
                 </div>
-                <div class="w-[18%] group h-[78px] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
+                <div class="w-[18%] group h-[100%] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
                     <img class="w-[30%] group-hover:w-[35%] duration-300" src="../img/product/3.webp" alt="">
                 </div>
-                <div class="w-[18%] group h-[78px] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
+                <div class="w-[18%] group h-[100%] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
                     <img class="w-[30%] group-hover:w-[35%] duration-300" src="../img/product/3.webp" alt="">
                 </div>
-                <div class="w-[18%] group h-[78px] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
+                <div class="w-[18%] group h-[100%] rounded-[15px] flex justify-center items-center border-1 border-[#E9E9E8]">
                     <img class="w-[30%] group-hover:w-[35%] duration-300" src="../img/product/3.webp" alt="">
                 </div>
             </div>
@@ -182,16 +187,18 @@
 
 
 
-        <div class=" w-[45%]  h-[100%] flex flex-col justify-between items-center ">
+
+
+        <div class=" xl:w-[45%] md:w-[43%] w-[100%] md:h-[100%] h-[610px] flex flex-col justify-between items-center ">
 
             <div class="w-[95%] h-[435px] ">
 
                 <div class="w-[100%] h-[22%]  flex flex-col justify-evenly items-start">
-                    <h1 id="name" class=" text-[1.8rem] text-[#28221E]">دانه قهوه باکسی برند Boxilian</h1>
-                    <p id="category" class="text-[.9rem] text-[#9B9895]">دانه قهوه | برند : Boxilian</p>
+                    <h1 id="name" class=" xl:text-[1.8rem] text-[1.4rem] text-[#28221E]">دانه قهوه باکسی برند Boxilian</h1>
+                    <p id="category" class="xl:text-[.9rem] text-[.85rem]  text-[#9B9895]">دانه قهوه | برند : Boxilian</p>
                 </div>
                 <div class="w-[100%] h-[56%]  flex flex-col justify-evenly items-start">
-                    <h1 class="text-[#28221E] text-[1.4rem] -mt-3">
+                    <h1 class="text-[#28221E] xl:text-[1.4rem] text-[1.2rem] -mt-3">
                         ویژگی های محصولات
                     </h1>
                     <div class="w-[100%]  h-[65%] mt-1 flex flex-col justify-between items-start">
@@ -210,8 +217,26 @@
 </svg>
 
                             </p>
-                            <h3 class=" text-[.9rem] text-[#9B9895] mx-1 font-extralight">جنس محصولات :</h3>
-                            <p class=" text-[.9rem] font-extralight">المینیوم خاص 100%</p>
+                            <h3 class=" xl:text-[.9rem] text-[.8rem] text-[#9B9895] mx-1 font-extralight">جنس محصولات :</h3>
+                            <p class=" xl:text-[.9rem] text-[.8rem] font-extralight">المینیوم خاص 100%</p>
+                        </div>
+
+                        <div class="flex justify-start items-center ">
+                            <p>
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_3467)">
+<path d="M0.500009 7.00002C0.49921 6.94264 0.512142 6.88575 0.537976 6.83301C0.56381 6.78027 0.601972 6.73285 0.650009 6.69378L5.15001 2.75649C5.35001 2.5815 5.66001 2.5815 5.86001 2.75649C6.06001 2.93148 6.06001 3.20271 5.86001 3.3777L1.71001 7.00877L5.85001 10.6311C6.05001 10.8061 6.05001 11.0773 5.85001 11.2523C5.65001 11.4273 5.34001 11.4273 5.14001 11.2523L0.640009 7.315C0.540009 7.2275 0.490009 7.11376 0.490009 7.00877L0.500009 7.00002Z" fill="#1D252B"/>
+</g>
+<defs>
+<clipPath id="clip0_1_3467">
+<rect width="14" height="7" fill="white" transform="translate(7) rotate(90)"/>
+</clipPath>
+</defs>
+</svg>
+
+                            </p>
+                            <h3 class=" xl:text-[.9rem] text-[.8rem] text-[#9B9895] mx-1 font-extralight">کارایی :</h3>
+                            <p class=" xl:text-[.9rem] text-[.8rem] font-extralight">استفاده روزمره</p>
                         </div>
                         <div class="flex justify-start items-center ">
                             <p>
@@ -227,8 +252,8 @@
 </svg>
 
                             </p>
-                            <h3 class=" text-[.9rem] text-[#9B9895] mx-1 font-extralight">کارایی :</h3>
-                            <p class=" text-[.9rem] font-extralight">استفاده روزمره</p>
+                            <h3 class=" xl:text-[.9rem] text-[.8rem] text-[#9B9895] mx-1 font-extralight">اندازه :</h3>
+                            <p class=" xl:text-[.9rem] text-[.8rem] font-extralight">۵۰۰ گرم</p>
                         </div>
                         <div class="flex justify-start items-center ">
                             <p>
@@ -244,8 +269,8 @@
 </svg>
 
                             </p>
-                            <h3 class=" text-[.9rem] text-[#9B9895] mx-1 font-extralight">اندازه :</h3>
-                            <p class=" text-[.9rem] font-extralight">۵۰۰ گرم</p>
+                            <h3 class=" xl:text-[.9rem] text-[.8rem] text-[#9B9895] mx-1 font-extralight">نوع محصول :</h3>
+                            <p class=" xl:text-[.9rem] text-[.8rem] font-extralight">روبوستا</p>
                         </div>
                         <div class="flex justify-start items-center ">
                             <p>
@@ -261,25 +286,8 @@
 </svg>
 
                             </p>
-                            <h3 class=" text-[.9rem] text-[#9B9895] mx-1 font-extralight">نوع محصول :</h3>
-                            <p class=" text-[.9rem] font-extralight">روبوستا</p>
-                        </div>
-                        <div class="flex justify-start items-center ">
-                            <p>
-                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1_3467)">
-<path d="M0.500009 7.00002C0.49921 6.94264 0.512142 6.88575 0.537976 6.83301C0.56381 6.78027 0.601972 6.73285 0.650009 6.69378L5.15001 2.75649C5.35001 2.5815 5.66001 2.5815 5.86001 2.75649C6.06001 2.93148 6.06001 3.20271 5.86001 3.3777L1.71001 7.00877L5.85001 10.6311C6.05001 10.8061 6.05001 11.0773 5.85001 11.2523C5.65001 11.4273 5.34001 11.4273 5.14001 11.2523L0.640009 7.315C0.540009 7.2275 0.490009 7.11376 0.490009 7.00877L0.500009 7.00002Z" fill="#1D252B"/>
-</g>
-<defs>
-<clipPath id="clip0_1_3467">
-<rect width="14" height="7" fill="white" transform="translate(7) rotate(90)"/>
-</clipPath>
-</defs>
-</svg>
-
-                            </p>
-                            <h3 class=" text-[.9rem] text-[#9B9895] mx-1 font-extralight">نوع بسته بندی :</h3>
-                            <p class=" text-[.9rem] font-extralight">کاغذی</p>
+                            <h3 class=" xl:text-[.9rem] text-[.8rem] text-[#9B9895] mx-1 font-extralight">نوع بسته بندی :</h3>
+                            <p class=" xl:text-[.9rem] text-[.8rem] font-extralight">کاغذی</p>
                         </div>
                         
 
@@ -287,15 +295,15 @@
 
                 </div>
                 <div class="w-[100%] h-[22%]  flex flex-col justify-around items-start">
-                    <h1 class="text-[#28221E] text-[1.4rem] -mt-3">
+                    <h1 class="text-[#28221E] xl:text-[1.4rem] text-[1.2rem] -mt-3">
                         یک گذینه را انتخاب کنید
                     </h1>
                     <div class="flex justify-start items-center">
-                        <h3 class=" text-[.9rem] text-[#9B9895] ml-4  mr-1 font-extralight">مقدار :</h3>
-                        <select  class="w-[250px] h-[50px] border-1 border-[#E9E9E8] rounded-[6px] p-2">
-                            <option value="">نیم کیلو گرم</option>
-                            <option value="">1 کیلو گرم</option>
-                            <option value="">2 کیلو گرم</option>
+                        <h3 class=" xl:text-[.9rem] text-[.8rem] text-[#9B9895] ml-4  mr-1 font-extralight">مقدار :</h3>
+                        <select  class="xl:w-[250px] md:w-[180px] w-[207px] text-[.9rem] h-[50px] md:h-[35px] xl:h-[50px] border-1 border-[#E9E9E8] rounded-[6px] px-2">
+                            <option >نیم کیلو گرم</option>
+                            <option >1 کیلو گرم</option>
+                            <option >2 کیلو گرم</option>
                         </select>
 
                     </div>
@@ -305,29 +313,33 @@
             </div>
 
 
-            <div id="show-count" class="w-[95%] h-[14.5%]  rounded-[12px] flex justify-between items-center ">
-                <div class="h-[65%]  mx-[3%]  flex items-center">
-                    <div id="btn-sale" class="2xl:min-w-[205px] xl:min-w-[180px] h-[85%] rounded-[100px] flex justify-center items-center text-white bg-[#9E624C] ">افزودن به سبد خرید</div>
+            <div id="show-count" class="w-[95%] md:h-[14.5%]  h-[150px] ltr  rounded-[12px] flex md:flex-row flex-col-reverse justify-around md:justify-between md:items-center ">
+                <div class="md:h-[65%] h-[50%] w-[332px]  mx-[3%]  flex items-center">
+                    <div id="btn-sale" class="2xl:min-w-[205px] xl:min-w-[180px] md:h-[85%] w-[50%] px-6 py-3 text-[.9rem] xl:text-[1.1rem] rounded-[100px] flex justify-center items-center text-white bg-[#9E624C] ">افزودن به سبد خرید</div>
                     <div id="count" class=" items-center mr-[4%] hidden">
                         <div id="plus" class="w-[32px] h-[32px] rounded-[38px] bg-[#ecd6c2] flex justify-center items-center text-xl  mx-2">+</div>
                         <div id="count-num" class="text-xl">1</div>
                         <div id="mines" class="w-[32px] h-[32px] rounded-[38px] bg-[#ecd6c2] flex justify-center items-center text-xl  mx-2 pb-[5%]">-</div>
                     </div>
                 </div>
-                <div dir="ltr" id="price" class="h-[65%]  mx-[3%] w-[30%] flex justify-center items-center 2xl:text-[1.8rem] xl:text-[1.6rem]  font-bold text-[#9E624C]">210.000 <p class="mx-2 text-[.8rem] font-extralight">تومان</p></div>
+                <div dir="ltr"  class="md:h-[65%] h-[50%] w-[100%] md:mx-[3%] md:w-[30%] text-[1.5rem]  flex justify-start items-center 2xl:text-[1.8rem] xl:text-[1.6rem]  font-bold text-[#9E624C]"> <p id="price" class="ml-5">210.000</p> <p class="mx-2 text-[.8rem] font-extralight">تومان</p></div>
             </div>
 
         </div>
 
 
+
+
         
-        <div class=" w-[22%] h-[100%] flex flex-col justify-between items-center  ">
+        <div class=" xl:w-[22%] md:w-[24%] w-[100%] h-[100%] flex md:flex-col flex-col-reverse justify-between items-center mt-4 md:mt-0 md:overflow-visible overflow-hidden">
 
+            <div style="overflow: scroll;white-space:nowrap;" class=" w-[100%]  md:h-[60%] flex justify-between items-center md:flex-col flex-row mt-4 md:mt-0 h-[71px] gap-5 ">
 
+            
 
-            <div class="w-[98%] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[13%] rounded-[15px] flex justify-center items-center">
+            <div class="md:w-[98%] min-w-[186px] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[100%] md:h-[20%] rounded-[15px] flex justify-center items-center">
                 
-                <div class=" w-[20%] h-[100%] flex justify-center items-center">
+                <div class=" xl:w-[20%] w-[18%] h-[100%] flex justify-center items-center">
                     <svg width="50%"  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.9999 17.5H16.2499C17.6249 17.5 18.7499 16.375 18.7499 15V2.5H7.49994C5.62494 2.5 3.98745 3.53748 3.13745 5.06248" stroke="#323130" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M2.5 21.25C2.5 23.325 4.175 25 6.25 25H7.5C7.5 23.625 8.625 22.5 10 22.5C11.375 22.5 12.5 23.625 12.5 25H17.5C17.5 23.625 18.625 22.5 20 22.5C21.375 22.5 22.5 23.625 22.5 25H23.75C25.825 25 27.5 23.325 27.                  5 21.25V17.5H23.75C23.0625 17.5 22.5 16.9375 22.5 16.25V12.5C22.5 11.8125 23.0625 11.25 23.75 11.25H25.3625L23.225 7.51251C22.775 6.73751 21.95 6.25 21.05 6.25H18.75V15C18.75 16.375 17.625 17.5 16.25 17.5H15"                stroke="#323130" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -340,15 +352,15 @@
                     </svg>
                 </div>
                 <div class="w-[80%] h-[100%] b flex flex-col justify-center items-start">
-                    <div class="text-black text-[1rem] my-[1%]">شرایط ارسال</div>
-                    <div class="text-[#28221E] text-[.7rem] my-[1%]">حدود ۲ الی ۶ روز کاری</div>
+                    <div class="text-black xl:text-[1rem] text-[.9rem] my-[1%]">شرایط ارسال</div>
+                    <div class="text-[#28221E] xl:text-[.7rem] text-[.6rem] my-[1%]">حدود ۲ الی ۶ روز کاری</div>
                 </div>
             </div>
 
 
-            <div class="w-[98%] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[13%] rounded-[15px] flex justify-center items-center">
+            <div class="md:w-[98%] min-w-[186px] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[100%] md:h-[20%] rounded-[15px] flex justify-center items-center">
                 
-                <div class=" w-[20%] h-[100%] flex justify-center items-center">
+                <div class="xl:w-[20%] w-[18%] h-[100%] flex justify-center items-center">
                     <svg width="50%" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M28.75 22.3874C28.775 23.3249 28.525 24.2124 28.075 24.9749C27.825 25.4249 27.4875 25.8375 27.1125 26.175C26.25 26.975 25.1125 27.4625 23.85 27.5C22.025 27.5375 20.4125 26.6 19.525 25.1625C19.05 24.425 18.7625 23.5375 18.75 22.6C18.7125 21.025 19.4125 19.6 20.5375 18.6625C21.3875 17.9625 22.4625 17.525 23.6375 17.5C26.4 17.4375 28.6875 19.6249 28.75 22.3874Z" stroke="#28221E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M21.8 22.5375L23.0626 23.7374L25.6751 21.2124" stroke="#28221E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -360,15 +372,15 @@
 
                 </div>
                 <div class="w-[80%] h-[100%] b flex flex-col justify-center items-start">
-                    <div class="text-black text-[1rem] my-[1%]">ضمانت کالا</div>
-                    <div class="text-[#28221E] text-[.7rem] my-[1%]">تا ۷ روز ضمانت عودت کالا</div>
+                    <div class="text-black xl:text-[1rem] text-[.9rem] my-[1%]">ضمانت کالا</div>
+                    <div class="text-[#28221E] xl:text-[.7rem] text-[.6rem] my-[1%]">تا ۷ روز ضمانت عودت کالا</div>
                 </div>
             </div>
 
 
-            <div class="w-[98%] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[13%] rounded-[15px] flex justify-center items-center">
+            <div class="md:w-[98%] min-w-[186px] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[100%] md:h-[20%] rounded-[15px] flex justify-center items-center">
                 
-                <div class=" w-[20%] h-[100%] flex justify-center items-center">
+                <div class=" w-[18%] xl:w-[20%] h-[100%] flex justify-center items-center">
                     <svg width="50%"viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.82506 23.1125V19.4625C6.82506 18.25 7.77506 17.1625 9.12506 17.1625C10.3376 17.1625 11.4251 18.1125 11.4251 19.4625V22.975C11.4251 25.4125 9.40006 27.4375 6.96256 27.4375C4.52506 27.4375 2.50006 25.4 2.50006 22.975V15.275C2.36256 8.25 7.91256 2.5625 14.9376 2.5625C21.9626 2.5625 27.5001 8.25 27.5001 15.1375V22.8375C27.5001 25.275 25.4751 27.3 23.0376 27.3C20.6001 27.3 18.5751 25.275 18.5751 22.8375V19.325C18.5751 18.1125 19.5251 17.025 20.8751 17.025C22.0876 17.025 23.1751 17.975 23.1751 19.325V23.1125" stroke="#323130" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -376,15 +388,15 @@
       
                 </div>
                 <div class="w-[80%] h-[100%] b flex flex-col justify-center items-start">
-                    <div class="text-black text-[1rem] my-[1%]">پشتیبانی</div>
-                    <div class="text-[#28221E] text-[.7rem] my-[1%]">پشتیبانی ۲۴ ساعته از تلگرام</div>
+                    <div class="text-black text-[.9rem] xl:text-[1rem] my-[1%]">پشتیبانی</div>
+                    <div class="text-[#28221E] text-[.6rem] xl:text-[.7rem] my-[1%]">پشتیبانی ۲۴ ساعته از تلگرام</div>
                 </div>
             </div>
 
 
-            <div class="w-[98%] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[13%] rounded-[15px] flex justify-center items-center">
+            <div class="md:w-[98%] min-w-[186px] bg-[#F7F7F7] border-1 border-[#E9E9E8] h-[100%] md:h-[20%] rounded-[15px] flex justify-center items-center">
                 
-                <div class=" w-[20%] h-[100%] flex justify-center items-center">
+                <div class=" w-[18%] xl:w-[20%] h-[100%] flex justify-center items-center">
                     <svg width="50%" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.1249 9.89998V16.3375C24.1249 20.1875 21.925 21.8375 18.625 21.8375H7.63744C7.07494 21.8375 6.53745 21.7875 6.03745 21.675C5.72495 21.625 5.42496 21.5375 5.14996 21.4375C3.27496 20.7375 2.13745 19.1125                   2.13745 16.3375V9.89998C2.13745 6.04998 4.33744 4.40002 7.63744 4.40002H18.625C21.425 4.40002 23.4375 5.58752 23.975 8.30002C24.0625 8.80002 24.1249 9.31248 24.1249 9.89998Z" stroke="#323130" stroke-width="1.5"                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M27.8763 13.6501V20.0877C27.8763 23.9377 25.6763 25.5876 22.3763 25.5876H11.3888C10.4638 25.5876 9.62633 25.4627 8.90133 25.1877C7.41383 24.6377 6.40132 23.5002 6.03882 21.6752C6.53882 21.7877 7.07632 21.                   8376 7.63882 21.8376H18.6263C21.9263 21.8376 24.1263 20.1877 24.1263 16.3377V9.90013C24.1263 9.31263 24.0763 8.78767 23.9763 8.30017C26.3513 8.80017 27.8763 10.4751 27.8763 13.6501Z" stroke="#323130"                 stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -395,13 +407,15 @@
 
                 </div>
                 <div class="w-[80%] h-[100%] b flex flex-col justify-center items-start">
-                    <div class="text-black text-[1rem] my-[1%]">پرداخت</div>
-                    <div class="text-[#28221E] text-[.7rem] my-[1%]">پرداخت امن از درگاه مطمئن</div>
+                    <div class="text-black text-[.9rem] xl:text-[1rem] my-[1%]">پرداخت</div>
+                    <div class="text-[#28221E] text-[.6rem] xl:text-[.7rem] my-[1%]">پرداخت امن از درگاه مطمئن</div>
                 </div>
             </div>
 
-            <div class="w-[98%] h-[34%] border-1 border-[#E9E9E8] flex flex-col items-center justify-evenly rounded-[15px]">
-                <div class="w-[60px] h-[60px] bg-[#F2E5DA] rounded-[32px] flex justify-center items-center">
+            </div>
+
+            <div class="w-[98%] h-[77px] md:h-[34%] border-1 border-[#E9E9E8] flex md:flex-col flex-row items-center justify-start md:justify-evenly rounded-[15px]">
+                <div class="xl:w-[60px] w-[45px] xl:h-[60px] h-[45px] bg-[#F2E5DA] rounded-[32px] flex justify-center items-center mr-2 md:mr-0">
 
                     <svg width="50%"  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.964 22.596C26.964 23.028 26.868 23.472 26.664 23.904C26.46 24.336 26.196 24.744 25.848 25.128C25.26 25.776 24.612 26.244 23.88 26.544C23.16 26.844 22.38 27 21.54 27C20.316 27 19.008 26.712 17.628 26.124C16.248 25.536 14.868 24.744 13.5 23.748C12.12 22.74 10.812 21.624 9.564 20.388C8.328 19.14 7.212 17.832 6.216 16.464C5.232 15.096 4.44 13.728 3.864 12.372C3.288 11.004 3 9.696 3 8.448C3 7.632 3.144 6.852 3.432 6.132C3.72 5.4 4.176 4.728 4.812 4.128C5.58 3.372 6.42 3 7.308 3C7.644 3 7.98 3.072 8.28 3.216C8.592 3.36 8.868 3.576 9.084 3.888L11.868 7.812C12.084 8.112 12.24 8.388 12.348 8.652C12.456 8.904 12.516 9.156 12.516 9.384C12.516 9.672 12.432 9.96 12.264 10.236C12.108 10.512 11.88 10.8 11.592 11.088L10.68 12.036C10.548 12.168 10.488 12.324 10.488 12.516C10.488 12.612 10.5 12.696 10.524 12.792C10.56 12.888 10.596 12.96 10.62 13.032C10.836 13.428 11.208 13.944 11.736 14.568C12.276 15.192 12.852 15.828 13.476 16.464C14.124 17.1 14.748 17.688 15.384 18.228C16.008 18.756 16.524 19.116 16.932 19.332C16.992 19.356 17.064 19.392 17.148 19.428C17.244 19.464 17.34 19.476 17.448 19.476C17.652 19.476 17.808 19.404 17.94 19.272L18.852 18.372C19.152 18.072 19.44 17.844 19.716 17.7C19.992 17.532 20.268 17.448 20.568 17.448C20.796 17.448 21.036 17.496 21.3 17.604C21.564 17.712 21.84 17.868 22.14 18.072L26.112 20.892C26.424 21.108 26.64 21.36 26.772 21.66C26.892 21.96 26.964 22.26 26.964 22.596Z" fill="#9E624C"/>
@@ -410,13 +424,19 @@
                     </svg>
 
                 </div>
-                <div class="text-[1rem] text-[#28221E]">نیاز به مشاوره دارید ؟</div>
-                <div dir="ltr" class="flex justify-center items-center text-[#28221E]"><p class="text-[1.2rem] text-[#9E624C] font-extrabold">021_</p>65549866</div>
 
+                <div class="flex flex-col h-[100%] md:h-[50%] justify-center gap-[8%]  mr-3">
+
+                <div class="xl:text-[1rem] text-[.9rem] text-[#28221E]">نیاز به مشاوره دارید ؟</div>
+                <div  dir="ltr" class="flex justify-center xl:text-[1.1rem] text-[.9rem] items-center text-[#28221E]"><p class="xl:text-[1.2rem] text-[1rem] text-[#9E624C] font-extrabold">021_</p>65549866</div>
+                
+                </div>
             </div>
 
 
         </div>
+
+
 
 
 
@@ -459,10 +479,10 @@
     </div>
    </div>
 
-   <div class="w-[92%] h-[410px] overflow-hidden m-auto">
-        <div class="w-[100%]   grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center">
+   <div class="w-[92%]  h-[410px] overflow-hidden m-auto">
+        <div class="w-[100%]   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center">
 
-                <a href="#" class="2xl:w-[80%] xl:w-[90%] lg:w-[90%] w-[90%] m-auto">
+                <a href="#" class="2xl:w-[80%] xl:w-[90%] lg:w-[90%] w-[90%] m-auto ">
 
                     <div class=" bg-white w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200 ">
 
@@ -537,13 +557,8 @@
         </div>
    </div>
 
-   
-
-   
-    
-
-
-
+ 
+</main>
 
 
 
