@@ -9,15 +9,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<!-- sm:bg-pink-200 md:bg-blue-200 lg:bg-green-200 xl:bg-yellow-200 2xl:bg-[#FFF8F5] -->
 
-<body  style="font-family:vaziri;overflow-x: auto;  " class="overflow-x-hidden  " >
+
+<body  style="font-family:vaziri;overflow-x: auto;  " class="overflow-x-hidden " >
 
 
 <div id="modal-screen" class="fixed inset-0 z-50  bg-black/50 backdrop-blur-sm hidden">
 
 
-        <div class="w-[500px]  bg-[#ffffff] absolute  left-[6%] top-[9%] p-4 rounded-[15px]  ">
+        <div class="sm:w-[500px] w-[100%]  bg-[#ffffff] absolute sm:left-[6%] sm:top-[9%] p-4 rounded-b-[15px] sm:rounded-[15px]  ">
             <div class="w-[100%] h-[60px]  border-b-2 border-[#9E624C] flex justify-between items-center p-2 mb-5">
                 <p class="text-[1.5rem]">سبد خرید</p>
                 <div id="close-X" class="w-[30px] h-[30px] mt-1 bg-[#972121] rounded-[50px] text-[.9rem] text-white flex justify-center items-center pt-[2px] font-extralight cursor-pointer">x</div>
@@ -73,6 +73,7 @@
 
         
     </div>
+
 
 
     <header>
@@ -143,6 +144,11 @@
     </div>
 
     </header>
+
+
+    <main>
+
+    
     
     <!-- //////////////////////////////////////////////////////////////////////////////////////////Landing Page -->
     <div id="landing-page" class=" w-[92%]  m-auto mt-2 xl:mt-8 2xl:h-[550px] h-[427px] md:h-[360px] lg:h-[450px] flex justify-between  items-center xl:h-[500px]">
@@ -245,24 +251,24 @@
     
     <div data-aos="fade-up" data-aos-duration="3000" class="w-[80%] relative h-[568px] bg-[#28221E] m-auto mt-[60px] rounded-[29px] flex flex-col items-center">
         <p class=" text-[#F2EBE5] pt-[3%] text-2xl font-extrabold ">تخفیفات ویژه</p>
-        <div class="w-[87%] h-[85%] absolute top-[17.5%] rounded-t-[20px] bg-[#ffffff1a]"></div>
+        <div class="w-[90%] md:w-[87%] h-[85%] absolute top-[17.5%] rounded-t-[20px] bg-[#ffffff1a]"></div>
 
-        <div class="w-[85%] h-[572px] absolute  top-[20%] rounded-[20px] bg-white overflow-hidden shadow-2xl flex flex-col items-center justify-evenly" >
+        <div class="w-[85%] h-[550px] md:h-[572px] absolute overflow-hidden  top-[20%] rounded-[20px] bg-white  shadow-2xl flex flex-col items-center justify-evenly" >
 
-            <div class="overflow-x-auto xl:w-[90%] min-w-[890px] h-[9%] " >
-                <div class="flex justify-evenly items-center w-[100%] h-[100%] border-b-2 border-[#0000000d]">
-                    <div class="text-[18px] -mr-[5%] h-[100%] flex justify-center items-center">دسته بندی ها</div>
-                    <div class="text-[15px] h-[100%] flex justify-center items-center text-[#9E624C] border-b-2 z-10 border-[#9E624C]" style="cursor: pointer;">دانه قهوه</div>
-                    <div class="text-[15px] h-[100%] flex justify-center items-center text-gray-500" style="cursor: pointer;">اسیاب قهوه</div>
-                    <div class="text-[15px] h-[100%] flex justify-center items-center text-gray-500" style="cursor: pointer;">ابزار باریستا</div>
-                    <div class="text-[15px] h-[100%] flex justify-center items-center text-gray-500" style="cursor: pointer;">بویلر اب جوش</div>
-                    <div class="text-[15px] h-[100%] flex justify-center items-center text-gray-500" style="cursor: pointer;">تجهیزات کافه و رستوران</div>
+            <div class=" w-[90%] h-[9%] overflow-x-auto">
+                <div class="flex min-w-[890px] flex-nowrap justify-evenly items-center h-full border-b-2 border-[#0000000d] whitespace-nowrap">
+                    <div class="text-[18px] -mr-[5%] h-full flex justify-center items-center">دسته بندی ها</div>
+                    <div class="text-[15px] h-full flex justify-center items-center text-[#9E624C] border-b-2 z-10 border-[#9E624C]" style="cursor: pointer;">دانه قهوه</div>
+                    <div class="text-[15px] h-full flex justify-center items-center text-gray-500" style="cursor: pointer;">اسیاب قهوه</div>
+                    <div class="text-[15px] h-full flex justify-center items-center text-gray-500" style="cursor: pointer;">ابزار باریستا</div>
+                    <div class="text-[15px] h-full flex justify-center items-center text-gray-500" style="cursor: pointer;">بویلر اب جوش</div>
+                    <div class="text-[15px] h-full flex justify-center items-center text-gray-500" style="cursor: pointer;">تجهیزات کافه و رستوران</div>
                 </div>
             </div>
 
-            <div dir="ltr" class=" h-[450px] w-[99%] justify-around  flex relative" >
-                <div class="h-[100%] w-[5%]  flex justify-center items-center : absolute left-[3%]">
-                    <div class="w-[40px] h-[40px] rounded-[14px] flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
+            <div dir="ltr" class=" h-[400px] md:h-[450px] w-[99%] justify-around  flex relative" >
+                <div class="h-[100%] w-[5%]  flex justify-center items-center : absolute left-[3%] ">
+                    <div class="w-[40px] h-[40px] rounded-[14px] hidden md:flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="25%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 267 512.43"><path fill-rule="nonzero" d="M263.78 18.9c4.28-4.3 4.3-11.31.04-15.64a10.865 10.865 0 0 0-15.48-.04L3.22 248.38c-4.28 4.3-4.3 11.31-.04 15.64l245.16 245.2c4.28 4.3 11.22 4.28 15.48-.05s4.24-11.33-.04-15.63L26.5 256.22 263.78 18.9z"/>
                         </svg>
                     </div>
@@ -272,7 +278,7 @@
 
                     <a href="#">
 
-                        <div class=" bg-white w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200 ">
+                        <div class="  w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200 bg-white ">
 
                             <div class="absolute z-10 left-3 top-3 w-[60px] h-[29px] rounded-[31px] bg-black flex justify-center text-white items-center text-[15px] font-sans">10%</div>
                             <div class="w-[85%] h-[70%]  flex justify-center items-center group"><img class="w-[40%] group-hover:w-[42%] duration-300" src="./img/product/3.webp" alt=""></div>
@@ -291,7 +297,7 @@
 
                     <a href="#">
 
-                        <div class=" bg-white w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200 ">
+                        <div class="  w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200  md:mt-auto bg-white  mt-11">
 
                             <div class="absolute z-10 left-3 top-3 w-[60px] h-[29px] rounded-[31px] bg-black flex justify-center text-white items-center text-[15px] font-sans">10%</div>
                             <div class="w-[85%] h-[70%]  flex justify-center items-center group"><img class="w-[40%] group-hover:w-[42%] duration-300" src="./img/product/3.webp" alt=""></div>
@@ -311,7 +317,7 @@
 
                     <a href="#">
 
-                        <div class=" bg-white w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200 ">
+                        <div class="  w-[100%] h-[410px] rounded-[20px]  m-auto relative flex flex-col items-center border-1 border-gray-200  xl:mt-auto bg-white mt-11">
 
                             <div class="absolute z-10 left-3 top-3 w-[60px] h-[29px] rounded-[31px] bg-black flex justify-center text-white items-center text-[15px] font-sans">10%</div>
                             <div class="w-[85%] h-[70%]  flex justify-center items-center group"><img class="w-[40%] group-hover:w-[42%] duration-300" src="./img/product/3.webp" alt=""></div>
@@ -332,7 +338,7 @@
 
                 </div>
                 <div class="h-[100%] w-[5%]  flex justify-cml-3enter items-center absolute right-[3%]">
-                    <div class="w-[40px] h-[40px]  rounded-[14px] flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
+                    <div class="w-[40px] h-[40px]  rounded-[14px] hidden md:flex justify-center items-center  hover:scale-105 duration-300 bg-[#F2E5DA]" style="cursor: pointer;">
                           <svg xmlns="http://www.w3.org/2000/svg"  width="25%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 267 512.43"><path fill-rule="nonzero" d="M3.22 18.9c-4.28-4.3-4.3-11.31-.04-15.64s11.2-4.35 15.48-.04l245.12 245.16c4.28 4.3 4.3 11.31.04 15.64L18.66 509.22a10.874 10.874 0 0 1-15.48-.05c-4.26-4.33-4.24-11.33.04-15.63L240.5 256.22 3.22 18.9z"/></svg>
                     </div>
                 </div>
@@ -367,21 +373,21 @@
     </div>
    </div>
 
-   <div data-aos="flip-down" data-aos-duration="500"   dir="ltr" class="w-[92%] h-[126px] border-1 border-gray-300 mx-[4%] mt-9 rounded-[2222px] flex items-center justify-around text-[10px] md:text-[16px]"> 
+   <div data-aos="flip-down" data-aos-duration="500"   dir="ltr" class="w-[92%] h-[240px] lg:h-[126px] border-1 border-gray-300 mx-[4%] mt-9 rounded-[20px] lg:rounded-[2222px] flex flex-col-reverse lg:flex-row items-center justify-around text-[10px] md:text-[16px]"> 
 
-        <div class="w-[70%] bg-[#E9E9E8] h-[50%] rounded-[20px]">
-              <ul dir="rtl" class="w-[100%] h-[100%] flex justify-evenly items-center">
-                <li id="li-Cat" style="cursor: pointer;" data-Cat="all" class="p-1 duration-300 rounded-[12px] li-focus">همه دسته بندی ها</li>
-                <li id="li-Cat" style="cursor: pointer;" data-Cat="اسیاب قهوه" class="p-1 duration-300 rounded-[12px] ">آسیاب قهوه</li>
-                <li id="li-Cat" style="cursor: pointer;" data-Cat="ابزار باریستا" class="p-1 duration-300 rounded-[12px] ">ابزار باریستا</li>
-                <li id="li-Cat" style="cursor: pointer;" data-Cat="بویلر اب جوش" class="p-1 duration-300 rounded-[12px] ">بویلر اب جوش</li>
-                <li id="li-Cat" style="cursor: pointer;" data-Cat="تجهیزات کافه و رستوران" class="p-1 duration-300 rounded-[12px] ">تجهیزات کافه و رستوران</li>
-                <li id="li-Cat" style="cursor: pointer;" data-Cat="شو کیک" class="p-1 duration-300 rounded-[12px] ">شو کیک</li>
+        <div class="w-[90%] lg:w-[70%] bg-[#E9E9E8] h-[50px] lg:h-[50%] rounded-[8px] lg:rounded-[20px] overflow-scroll">
+              <ul dir="rtl" class="min-w-[700px] w-[100%] h-[100%] flex justify-evenly items-center whitespace-nowrap text-[.8rem] lg:text-[1rem] p-[10px]">
+                <li id="li-Cat" style="cursor: pointer;" data-Cat="all" class="p-1 duration-300 rounded-[12px] li-focus text-[.8rem] lg:text-[1rem] p-[10px]">همه دسته بندی ها</li>
+                <li id="li-Cat" style="cursor: pointer;" data-Cat="اسیاب قهوه" class="p-1 duration-300 rounded-[12px]  text-[.8rem] lg:text-[1rem] p-[10px]">آسیاب قهوه</li>
+                <li id="li-Cat" style="cursor: pointer;" data-Cat="ابزار باریستا" class="p-1 duration-300 rounded-[12px] text-[.8rem] lg:text-[1rem] p-[10px]">ابزار باریستا</li>
+                <li id="li-Cat" style="cursor: pointer;" data-Cat="بویلر اب جوش" class="p-1 duration-300 rounded-[12px]  text-[.8rem] lg:text-[1rem] p-[10px]">بویلر اب جوش</li>
+                <li id="li-Cat" style="cursor: pointer;" data-Cat="تجهیزات کافه و رستوران" class="p-1 duration-300 rounded-[12px]  text-[.8rem] lg:text-[1rem] p-[10px]">تجهیزات کافه و رستوران</li>
+                <li id="li-Cat" style="cursor: pointer;" data-Cat="شو کیک" class="p-1 duration-300 rounded-[12px]  text-[.8rem] lg:text-[1rem] p-[10px]">شو کیک</li>
               </ul>
         </div>
 
-        <div dir="ltr"  class="w-[290px] h-[80%]  flex items-center justify-between">
-            <div style="text-align: right;" class="w-[75%] h-[60%] flex flex-col justify-between ">
+        <div dir="ltr"  class="w-[290px] lg:h-[80%] h-[50%] lg:flex-row flex-col-reverse flex items-center justify-center gap-[10%] lg:justify-between">
+            <div  class="w-[75%] h-[60%]  flex flex-col justify-between items-center lg:items-end">
                 <p class="text-2xl">پر فروش ترین ها</p>
                 <p class="text-[14px] text-gray-600">پر فروش ترین محصولات اریک کافه</p>
             </div>
@@ -497,7 +503,12 @@
 
     </div>
 
-    <div class="md:h-[395px] h-[745px] w-[100%] bg-[#28221E] mt-[250px] flex flex-col items-center justify-evenly ">
+    </main>
+
+    
+
+    <footer>
+        <div class="md:h-[395px] h-[745px] w-[100%] bg-[#28221E] mt-[250px] flex flex-col items-center justify-evenly ">
 
         <h1 class="w-[60%] flex justify-center items-center  md:w-[15%] text-4xl text-white font-extrabold">اریک کافه</h1>
         <p class="md:w-[30%] w-[70%] md:m-3 h-[58px] text-gray-200">!لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند</p>
@@ -540,9 +551,7 @@
 
     </div>
 
-    
-
-    
+    </footer>
     
     
     
